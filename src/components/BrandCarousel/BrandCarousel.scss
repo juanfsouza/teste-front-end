@@ -1,0 +1,313 @@
+.brand-carousel {
+    background-color: #fff;
+    padding: 3rem 0 2rem;
+  
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  
+    &__title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #3442b5;
+      font-family: 'Poppins', sans-serif;
+      margin: 0 0 2.5rem;
+      position: relative;
+  
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 250px;
+        height: 1px;
+        transform: translateY(-50%);
+      }
+  
+      &::before {
+        left: calc(50% - 250px - 165px);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+      }
+  
+      &::after {
+        right: calc(50% - 250px - 165px);
+        background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+      }
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #3f3f40;
+        font-family: 'Poppins', sans-serif;
+        margin: 0 0 2.5rem;
+        position: relative;
+      }
+  
+    // ── Faixa de logos animada ──────────────────────────────
+    &__track-wrapper {
+      overflow: hidden;
+      position: relative;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+  
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 80px;
+        z-index: 2;
+        pointer-events: none;
+      }
+  
+      &::before {
+        left: 0;
+        background: linear-gradient(to right, #fff 0%, transparent 100%);
+      }
+  
+      &::after {
+        right: 0;
+        background: linear-gradient(to left, #fff 0%, transparent 100%);
+      }
+    }
+  
+    &__track {
+      display: flex;
+      gap: 1.5rem;
+      width: max-content;
+      padding: 1rem 0;
+      animation: brand-scroll 22s linear infinite;
+  
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  
+    &__item {
+      flex: 0 0 120px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+  
+      &:hover .brand-carousel__logo-wrapper {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        transform: translateY(-3px);
+      }
+    }
+  
+    &__logo-wrapper {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+  
+    &__logo {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  
+    // ── Carrossel de produtos ───────────────────────────────
+    &__products-container {
+      max-width: 1200px;
+      margin: 2rem auto 0;
+      margin-bottom: 3rem;
+      padding: 0 1rem;
+    }
+  
+    &__carousel {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 0 -2.5rem;
+      padding: 0 2.5rem;
+    }
+  
+    &__scroll {
+      display: flex;
+      gap: 1.5rem;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      width: 100%;
+  
+      > * {
+        flex: 0 0 calc(25% - (1.5rem * 3 / 4));
+        min-width: 0;
+      }
+    }
+  
+    &__arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 50%;
+      width: 2.25rem;
+      height: 2.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      line-height: 1;
+      color: #555;
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+      transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  
+      &:hover {
+        background-color: #3442b5;
+        color: #fff;
+        border-color: #3442b5;
+      }
+  
+      &--left {
+        left: 0;
+      }
+  
+      &--right {
+        right: 0;
+      }
+    }
+  
+    &__loading {
+      text-align: center;
+      padding: 3rem;
+      color: #666;
+      font-size: 1.125rem;
+    }
+
+    // ── Responsividade ────────────────────────────────────────
+    @media (max-width: 1024px) {
+      &__scroll {
+        > * {
+          flex: 0 0 calc(33.333% - (1.5rem * 2 / 3));
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 2rem 0 1.5rem;
+
+      &__title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+
+        &::before,
+        &::after {
+          width: 150px;
+        }
+
+        &::before {
+          left: calc(50% - 150px - 100px);
+        }
+
+        &::after {
+          right: calc(50% - 150px - 100px);
+        }
+      }
+
+      &__subtitle {
+        font-size: 0.9375rem;
+        margin-bottom: 2rem;
+      }
+
+      &__logo-wrapper {
+        width: 100px;
+        height: 100px;
+      }
+
+      &__item {
+        flex: 0 0 100px;
+      }
+
+      &__carousel {
+        margin: 0 -1rem;
+        padding: 0 1rem;
+      }
+
+      &__scroll {
+        gap: 1rem;
+
+        > * {
+          flex: 0 0 calc(50% - 0.5rem);
+        }
+      }
+
+      &__arrow {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      padding: 1.5rem 0 1rem;
+
+      &__title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+
+        &::before,
+        &::after {
+          width: 80px;
+        }
+
+        &::before {
+          left: calc(50% - 80px - 60px);
+        }
+
+        &::after {
+          right: calc(50% - 80px - 60px);
+        }
+      }
+
+      &__subtitle {
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &__logo-wrapper {
+        width: 80px;
+        height: 80px;
+        padding: 0.5rem;
+      }
+
+      &__item {
+        flex: 0 0 80px;
+      }
+
+      &__scroll {
+        > * {
+          flex: 0 0 calc(100% - 0.5rem);
+        }
+      }
+
+      &__arrow {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @keyframes brand-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-1008px); }
+  }

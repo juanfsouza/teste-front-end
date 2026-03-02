@@ -1,31 +1,138 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste Econverse - Desenvolvedor Front-End
 
-### Vem ser #Econverse!
+Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Desenvolvedor Front-End na Econverse.
 
-Segue abaixo as instruções para a execução do teste.
+## 📋 Sobre o Projeto
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br com o título **Teste Vaga FrontEnd**
+Aplicação e-commerce desenvolvida em React e TypeScript, consumindo dados de produtos via API JSON. O projeto apresenta uma vitrine de produtos com modal interativo, layout responsivo e seguindo as melhores práticas de desenvolvimento web.
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+## 🚀 Tecnologias Utilizadas
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+- **React 18** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Vite** - Build tool moderna e rápida
+- **Sass (SCSS)** - Pré-processador CSS
+- **HTML5 Semântico** - Estrutura semântica para melhor SEO e acessibilidade
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+## 📦 Pré-requisitos
 
-**Boa sorte! ;)**
+- Node.js
+- npm
+
+## 🛠️ Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/juanfsouza/Front_Econverse_Test
+cd react-ts-app
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+## ▶️ Executando o Projeto
+
+### Modo de Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em `http://localhost:5173`
+
+### Build para Produção
+
+Para criar uma build de produção:
+
+```bash
+npm run build
+```
+
+Os arquivos otimizados estarão na pasta `dist/`
+
+### Preview da Build
+
+Para visualizar a build de produção localmente:
+
+```bash
+npm run preview
+```
+
+## 🧪 Testando o Projeto
+
+O projeto pode ser testado executando o servidor de desenvolvimento e verificando:
+
+1. **Vitrine de Produtos**: Verifique se os produtos são carregados corretamente do JSON
+2. **Modal de Produto**: Clique em qualquer produto para abrir o modal com as informações detalhadas
+3. **Responsividade**: Teste em diferentes tamanhos de tela (desktop, tablet, mobile)
+4. **Navegação**: Teste os carrosséis e botões de navegação
+
+## 📁 Estrutura do Projeto
+
+```
+react-ts-app/
+├── src/
+│   ├── components/          # Componentes React
+│   │   ├── TopBar/         # Barra superior
+│   │   ├── Header/         # Cabeçalho com busca
+│   │   ├── Navigation/     # Menu de navegação
+│   │   ├── Hero/           # Banner principal
+│   │   ├── CategoryIcons/   # Ícones de categorias
+│   │   ├── ProductShowcase/# Vitrine de produtos
+│   │   ├── ProductCard/    # Card de produto
+│   │   ├── ProductModal/   # Modal de detalhes do produto
+│   │   ├── Partners/       # Seção de parceiros
+│   │   ├── RelatedSection/ # Produtos relacionados
+│   │   ├── BrandCarousel/  # Carrossel de marcas
+│   │   ├── Newsletter/      # Formulário de newsletter
+│   │   └── Footer/         # Rodapé
+│   ├── styles/             # Estilos globais
+│   ├── types/              # Definições TypeScript
+│   ├── utils/              # Funções utilitárias (API)
+│   ├── App.tsx             # Componente principal
+│   └── main.tsx            # Ponto de entrada
+├── public/                 # Arquivos estáticos
+├── index.html              # HTML principal
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## 🎯 Funcionalidades Implementadas
+
+- ✅ Vitrine de produtos consumindo dados do JSON via API
+- ✅ Modal interativo ao clicar em um produto
+- ✅ Layout responsivo para desktop, tablet e mobile
+- ✅ Carrosséis de produtos com navegação
+- ✅ Componentização adequada e reutilizável
+- ✅ HTML semântico e acessível
+- ✅ SEO otimizado com meta tags
+- ✅ Pré-processador Sass para estilização
+
+## 📝 Especificações Técnicas Atendidas
+
+- ✅ Desenvolvido em React e TypeScript
+- ✅ Layout conforme especificação (pixel a pixel)
+- ✅ Consumo de produtos via JSON
+- ✅ Modal com informações do produto
+- ✅ Pré-processador Sass utilizado
+- ✅ Sem uso de bibliotecas UI (Bootstrap, Foundation, etc.)
+- ✅ HTML semântico
+- ✅ Boas práticas de SEO
+
+## 🔍 Pontos de Destaque
+
+- **Componentização**: Código organizado em componentes reutilizáveis
+- **TypeScript**: Tipagem forte para maior segurança e manutenibilidade
+- **Responsividade**: Layout adaptável para todos os dispositivos
+- **Acessibilidade**: Uso de aria-labels, roles e HTML semântico
+- **Performance**: Otimizações com Vite e lazy loading quando necessário
+- **SEO**: Meta tags, Open Graph e estrutura semântica
+
+
+**Boa sorte na avaliação! 🚀**

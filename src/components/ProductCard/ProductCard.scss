@@ -1,0 +1,166 @@
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  &__image {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    background: #fff;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+  }
+
+  &__name {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #3f3f40;
+    margin: 0 0 0.5rem;
+    line-height: 1.4;
+  }
+
+  &__pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  &__original-price {
+    font-size: 0.8125rem;
+    color: #999;
+    text-decoration: line-through;
+  }
+
+  &__current-price {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #3f3f40;
+    line-height: 1.2;
+  }
+
+  &__installments {
+    font-size: 0.75rem;
+    color: #555;
+    margin: 0.25rem 0 0;
+  }
+
+  &__shipping {
+    font-size: 0.8125rem;
+    color: #3442B5;
+    margin: 0.15rem 0 0;
+    font-weight: 500;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 0.85rem;
+    background: #3442B5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
+    padding-top: 0.85rem;
+
+    align-self: stretch;
+
+    &:hover {
+      background: #2a35a0;
+    }
+  }
+
+  // ── Responsividade ────────────────────────────────────────
+  @media (max-width: 768px) {
+    &__image {
+      height: 180px;
+      padding: 1rem 0.75rem;
+    }
+
+    &__content {
+      padding: 0.75rem;
+    }
+
+    &__name {
+      font-size: 0.875rem;
+    }
+
+    &__current-price {
+      font-size: 1.25rem;
+    }
+
+    &__button {
+      padding: 0.75rem;
+      font-size: 0.8125rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__image {
+      height: 160px;
+      padding: 0.75rem 0.5rem;
+    }
+
+    &__content {
+      padding: 0.625rem;
+      gap: 0.2rem;
+    }
+
+    &__name {
+      font-size: 0.8125rem;
+      margin-bottom: 0.375rem;
+    }
+
+    &__current-price {
+      font-size: 1.125rem;
+    }
+
+    &__original-price {
+      font-size: 0.75rem;
+    }
+
+    &__installments {
+      font-size: 0.6875rem;
+    }
+
+    &__shipping {
+      font-size: 0.75rem;
+    }
+
+    &__button {
+      padding: 0.625rem;
+      font-size: 0.75rem;
+    }
+  }
+}

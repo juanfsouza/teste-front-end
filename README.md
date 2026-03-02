@@ -6,13 +6,15 @@ Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Des
 
 <img width="1920" height="4400" alt="download" src="https://github.com/user-attachments/assets/28031e69-3beb-4595-bba9-f49943a01187" />
 
-## Responsividade
 ---
+
+## Responsividade
 
 <img width="3922" height="1260" alt="download (1)" src="https://github.com/user-attachments/assets/3ec7e429-22c1-4ed4-a486-4ccb618b79c1" />
 
-## LightHouse
 ---
+
+## LightHouse
 
 <img width="1919" height="952" alt="Screenshot_11" src="https://github.com/user-attachments/assets/5d9df25c-4aab-4270-9c21-20dc604ae66a" />
 

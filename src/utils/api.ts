@@ -32,4 +32,3 @@ export const fetchCarouselProducts = async (): Promise<CarouselProductResponse> 
     throw error
   }
 }
-

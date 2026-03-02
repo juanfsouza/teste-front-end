@@ -2,6 +2,8 @@
 
 Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Desenvolvedor Front-End na Econverse.
 
+<img width="1920" height="4400" alt="download" src="https://github.com/user-attachments/assets/28031e69-3beb-4595-bba9-f49943a01187" />
+
 ## 📋 Sobre o Projeto
 
 Aplicação e-commerce desenvolvida em React e TypeScript, consumindo dados de produtos via API JSON. O projeto apresenta uma vitrine de produtos com modal interativo, layout responsivo e seguindo as melhores práticas de desenvolvimento web.
@@ -23,8 +25,8 @@ Aplicação e-commerce desenvolvida em React e TypeScript, consumindo dados de p
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/juanfsouza/Front_Econverse_Test
-cd react-ts-app
+git clone https://github.com/juanfsouza/teste-front-end
+cd teste-front-end
 ```
 
 2. Instale as dependências:
@@ -61,15 +63,6 @@ Para visualizar a build de produção localmente:
 ```bash
 npm run preview
 ```
-
-## 🧪 Testando o Projeto
-
-O projeto pode ser testado executando o servidor de desenvolvimento e verificando:
-
-1. **Vitrine de Produtos**: Verifique se os produtos são carregados corretamente do JSON
-2. **Modal de Produto**: Clique em qualquer produto para abrir o modal com as informações detalhadas
-3. **Responsividade**: Teste em diferentes tamanhos de tela (desktop, tablet, mobile)
-4. **Navegação**: Teste os carrosséis e botões de navegação
 
 ## 📁 Estrutura do Projeto
 
@@ -125,14 +118,6 @@ react-ts-app/
 - ✅ HTML semântico
 - ✅ Boas práticas de SEO
 
-## 🔍 Pontos de Destaque
+---
 
-- **Componentização**: Código organizado em componentes reutilizáveis
-- **TypeScript**: Tipagem forte para maior segurança e manutenibilidade
-- **Responsividade**: Layout adaptável para todos os dispositivos
-- **Acessibilidade**: Uso de aria-labels, roles e HTML semântico
-- **Performance**: Otimizações com Vite e lazy loading quando necessário
-- **SEO**: Meta tags, Open Graph e estrutura semântica
-
-
-**Boa sorte na avaliação! 🚀**
+### By JFS

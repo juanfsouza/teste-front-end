@@ -21,7 +21,14 @@ export const ProductCard = ({ product, onClick }: ProductCardProps) => {
   return (
     <article className="product-card">
       <div className="product-card__image" onClick={() => onClick(product)}>
-        <img src={product.photo} alt={product.name} />
+        <img
+          src={product.photo}
+          alt={product.name}
+          width={280}
+          height={220}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <div className="product-card__content">
         <h3 className="product-card__name">{product.name}</h3>

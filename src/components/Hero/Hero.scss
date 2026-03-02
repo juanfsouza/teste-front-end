@@ -2,19 +2,25 @@
   position: relative;
   width: 100%;
   height: 390px;
-  background-image: url('/hero-home.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  image-rendering: high-quality;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  background: #0b0b0b;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   overflow: hidden;
+
+  &__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 
   &::before {
     content: '';
@@ -24,11 +30,12 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
   }
 
   &__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     width: 1280px;
     max-width: 100%;
     margin: 0 auto;

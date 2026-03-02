@@ -2,6 +2,8 @@
 
 Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Desenvolvedor Front-End na Econverse.
 
+<img width="1920" height="4400" alt="download" src="https://github.com/user-attachments/assets/28031e69-3beb-4595-bba9-f49943a01187" />
+
 ## 📋 Sobre o Projeto
 
 Aplicação e-commerce desenvolvida em React e TypeScript, consumindo dados de produtos via API JSON. O projeto apresenta uma vitrine de produtos com modal interativo, layout responsivo e seguindo as melhores práticas de desenvolvimento web.

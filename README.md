@@ -4,6 +4,8 @@ Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Des
 
 <img width="1920" height="4400" alt="download" src="https://github.com/user-attachments/assets/28031e69-3beb-4595-bba9-f49943a01187" />
 
+<img width="3922" height="1260" alt="download (1)" src="https://github.com/user-attachments/assets/3ec7e429-22c1-4ed4-a486-4ccb618b79c1" />
+
 ## 📋 Sobre o Projeto
 
 Aplicação e-commerce desenvolvida em React e TypeScript, consumindo dados de produtos via API JSON. O projeto apresenta uma vitrine de produtos com modal interativo, layout responsivo e seguindo as melhores práticas de desenvolvimento web.

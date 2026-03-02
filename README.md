@@ -14,7 +14,7 @@ Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Des
 ## LightHouse
 ---
 
-<img width="3922" height="1260" alt="download (1)" src="https://github.com/user-attachments/assets/f0a2016d-9cd8-45af-821a-f03ce9ab5fb1" />
+<img width="1919" height="952" alt="Screenshot_11" src="https://github.com/user-attachments/assets/5d9df25c-4aab-4270-9c21-20dc604ae66a" />
 
 
 ## 📋 Sobre o Projeto

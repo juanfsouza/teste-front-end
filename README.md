@@ -2,9 +2,20 @@
 
 Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Desenvolvedor Front-End na Econverse.
 
+## Page
+
 <img width="1920" height="4400" alt="download" src="https://github.com/user-attachments/assets/28031e69-3beb-4595-bba9-f49943a01187" />
 
+## Responsividade
+---
+
 <img width="3922" height="1260" alt="download (1)" src="https://github.com/user-attachments/assets/3ec7e429-22c1-4ed4-a486-4ccb618b79c1" />
+
+## LightHouse
+---
+
+<img width="3922" height="1260" alt="download (1)" src="https://github.com/user-attachments/assets/f0a2016d-9cd8-45af-821a-f03ce9ab5fb1" />
+
 
 ## 📋 Sobre o Projeto
 
@@ -54,16 +65,6 @@ Para criar uma build de produção:
 
 ```bash
 npm run build
-```
-
-Os arquivos otimizados estarão na pasta `dist/`
-
-### Preview da Build
-
-Para visualizar a build de produção localmente:
-
-```bash
-npm run preview
 ```
 
 ## 📁 Estrutura do Projeto
